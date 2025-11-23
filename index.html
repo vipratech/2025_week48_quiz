@@ -255,7 +255,7 @@
         .mute-btn {
             position: absolute;
             top: 20px;
-            right: 20px;
+            left: 20px;
             z-index: 50;
             color: #fff;
             font-size: 24px;
@@ -272,15 +272,15 @@
     <!-- AUDIO ELEMENTS -->
     <!-- Using Google Actions Sound Library for Demo Purposes -->
     <!-- Loop: Industrial Hum for suspense -->
-    <audio id="bg-music" loop src="https://actions.google.com/sounds/v1/ambiences/industrial_hum.ogg"></audio>
+    <audio id="bg-music" loop src="https://actions.google.com/sounds/v1/science_fiction/sci_fi_vortex.ogg"></audio>
     <!-- Timer: Ticking Clock -->
-    <audio id="sfx-timer" loop src="https://actions.google.com/sounds/v1/alarms/mechanical_clock_ticking.ogg"></audio>
+    <audio id="sfx-timer" loop src="https://actions.google.com/sounds/v1/household/clock_ticking.ogg"></audio>
     <!-- Lock In: Button Click -->
-    <audio id="sfx-select" src="https://actions.google.com/sounds/v1/tools/button_click.ogg"></audio>
+    <audio id="sfx-select" src="https://actions.google.com/sounds/v1/office/click_continuous.ogg"></audio>
     <!-- Correct: Magic Chime -->
     <audio id="sfx-correct" src="https://actions.google.com/sounds/v1/cartoon/magic_chime.ogg"></audio>
     <!-- Wrong: Slide Whistle Down -->
-    <audio id="sfx-wrong" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle_down.ogg"></audio>
+    <audio id="sfx-wrong" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle_to_drum.ogg"></audio>
 
     <div class="slide-container">
         <div class="mute-btn" onclick="toggleMute()"><i id="mute-icon" class="fa-solid fa-volume-high"></i></div>
@@ -317,11 +317,11 @@
                 </div>
             </div>
 
-            <div class="lifelines-panel">
+            <!-- <div class="lifelines-panel">
                 <div class="life-icon" onclick="useLifeline('5050', this)" title="50:50">50:50</div>
                 <div class="life-icon" onclick="useLifeline('skip', this)" title="Skip Question"><i class="fa-solid fa-forward"></i></div>
                 <div class="life-icon" onclick="useLifeline('time', this)" title="+30 Seconds"><i class="fa-solid fa-clock"></i></div>
-            </div>
+            </div> -->
 
             <button class="nav-btn" id="next-btn" onclick="nextQuestion()">NEXT ❯</button>
         </div>
